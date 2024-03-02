@@ -5,8 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    private Camera mainCamera;
 
-    // Update is called once per frame
+    void Start()
+    {
+        mainCamera = Camera.main;
+    }
+
     void Update()
     {
         float moveX = 0f;
