@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
             moveX = +1f;
         }
 
-        Vector3 moveDirection = new Vector3(moveX, moveY).normalized;
+        Vector2 moveDirection = new Vector2(moveX, moveY).normalized;
 
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
     }
