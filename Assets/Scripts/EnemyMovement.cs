@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -33,7 +34,11 @@ public class EnemyMovement : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            collision.GetComponent<Health>().TakeDamage(damage);
+            Health playerHealth = collision.GetComponent<Health>();
+            playerHealth.TakeDamage(damage);
+            if (playerHealth.currentHealth <= 0){
+                SceneManager.LoadScene("gameOver");
+            }
         }
     }
 }
