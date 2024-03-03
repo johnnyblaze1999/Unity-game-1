@@ -33,7 +33,6 @@ public class EnemyMovement : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            Debug.Log("L");
             collision.GetComponent<Health>().TakeDamage(damage);
         }
     }
