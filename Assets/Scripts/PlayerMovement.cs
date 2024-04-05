@@ -1,23 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
     private Camera mainCamera;
+<<<<<<< Updated upstream
+=======
+    private SpriteRenderer spriteRenderer;
+    public float moveSpeed = 5f;
+    public Animator animator;
     public Text gameoverText;
+>>>>>>> Stashed changes
 
     void Start()
     {
         mainCamera = Camera.main;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         float moveX = 0f;
         float moveY = 0f;
+
+        
 
         if (Input.GetKey(KeyCode.W)){
             moveY = +1f;
@@ -31,9 +39,23 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.D)){
             moveX = +1f;
         }
+        if (moveX != 0 || moveY != 0){
+            animator.SetFloat("Speed", 1f);
+        }
+        else{
+            animator.SetFloat("Speed", 0f);
+        }
 
-        Vector3 moveDirection = new Vector3(moveX, moveY).normalized;
+        Vector2 moveDirection = new Vector2(moveX, moveY).normalized;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
+
+        // Flip Sprite
+        if (moveX != 0f){
+            spriteRenderer.flipX = moveX < 0f;
+        }
     }
 }
