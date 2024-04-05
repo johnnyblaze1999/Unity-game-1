@@ -2,30 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     private Camera mainCamera;
-<<<<<<< Updated upstream
-=======
     private SpriteRenderer spriteRenderer;
-    public float moveSpeed = 5f;
     public Animator animator;
-    public Text gameoverText;
->>>>>>> Stashed changes
+    private float moveSpeed = 5f;
 
     void Start()
     {
         mainCamera = Camera.main;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         float moveX = 0f;
         float moveY = 0f;
-
-        
 
         if (Input.GetKey(KeyCode.W)){
             moveY = +1f;
@@ -47,10 +43,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Vector2 moveDirection = new Vector2(moveX, moveY).normalized;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
 
         // Flip Sprite

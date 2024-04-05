@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Vector3 direction;
     private float damage = 1;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class EnemyMovement : MonoBehaviour
         {
             Health playerHealth = collision.GetComponent<Health>();
             playerHealth.TakeDamage(damage);
+
             if (playerHealth.currentHealth <= 0){
                 SceneManager.LoadScene("gameOver");
             }
