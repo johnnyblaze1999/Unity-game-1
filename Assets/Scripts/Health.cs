@@ -5,16 +5,19 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public float startingHealth;
+    public Animator animator;
     public float currentHealth { get; private set; }
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = startingHealth;
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        animator.SetTrigger("IsHit");
 
         if (currentHealth > 0)
         {
@@ -24,11 +27,5 @@ public class Health : MonoBehaviour
         {
             GetComponent<PlayerMovement>().enabled = false;
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.E))
-            TakeDamage(1);
     }
 }
