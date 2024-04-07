@@ -19,8 +19,13 @@ public class CurrentScore : MonoBehaviour
         while (true)
         {
             yield return new WaitForSecondsRealtime(1);
-            score++;
-            pointText.text = score.ToString();
+
+            // Check if the game is paused
+            if(!PauseMenu.isPaused){
+                score++;
+                pointText.text = score.ToString();
+            }
+            
         }
     }
     // Update is called once per frame

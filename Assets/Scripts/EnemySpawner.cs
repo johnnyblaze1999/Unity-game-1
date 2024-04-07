@@ -21,6 +21,10 @@ public class EnemySpawner : MonoBehaviour
             //CancelInvoke("SpawnEnemy");
             return;
         }
+        // Shorter spawn interval
+        if (CurrentScore.score > 40){
+            spawnInterval = 2.5f;
+        }
         // Choose a random side (0: right, 1: bottom, 2: left, 3: top)
         int side = Random.Range(0, 4);
 
