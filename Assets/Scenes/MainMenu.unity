@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 712384840}
-  volumeTextUI: {fileID: 0}
+  volumeTextUI: {fileID: 500195309}
 --- !u!1 &1686983678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1421,6 @@ GameObject:
   - component: {fileID: 1686983680}
   - component: {fileID: 1686983679}
   - component: {fileID: 1686983683}
-  - component: {fileID: 1686983684}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1504,8 +1503,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1030254599}
   - {fileID: 871247804}
+  - {fileID: 1030254599}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1522,12 +1521,12 @@ AudioSource:
   m_GameObject: {fileID: 1686983678}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 7a112983ccf7ad34ea5cc2d89abdda77, type: 2}
   m_audioClip: {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 0.21
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1609,20 +1608,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1686983684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686983678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39938bc93ecb62f48b12d53a7598fb26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
-  volumeTextUI: {fileID: 0}
 --- !u!1 &1751376414
 GameObject:
   m_ObjectHideFlags: 0
