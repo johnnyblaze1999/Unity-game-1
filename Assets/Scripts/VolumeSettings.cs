@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
+using TMPro;
 
 public class VolumeSettings : MonoBehaviour
 {
@@ -13,22 +13,25 @@ public class VolumeSettings : MonoBehaviour
     {
         LoadValues();
     }
-    public void volumeSlider(float volume)
+    public void VolumeSlider(float volume)
     {
         volumeTextUI.text = volume.ToString("0.0");
-
     }
 
-    public SaveVolumeButton()
+    public void SaveVolumeButton()
     {
         float volumeValue = volumeSlider.value;
-        PlayerPrefs.SetFloat("Volume", volumeValue);
+        PlayerPrefs.SetFloat("VolumeValue", volumeValue);
         LoadValues();
     }
 
     void LoadValues(){
-        float volumeValue = PlayerPrefs.GetFloat("volumeValue");
+        float volumeValue = PlayerPrefs.GetFloat("VolumeValue");
         volumeSlider.value = volumeValue;
         AudioListener.volume = volumeValue;
     }
+
+
 }
+
+
