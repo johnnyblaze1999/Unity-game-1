@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 493072216}
-  moveSpeed: 15
+  moveSpeed: 10
 --- !u!50 &356489526
 Rigidbody2D:
   serializedVersion: 4
@@ -595,7 +595,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356489520}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -685,6 +685,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730349537506244359, guid: a57c97900e23e7d40a64a662e4084174, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393251688664818084, guid: a57c97900e23e7d40a64a662e4084174, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7296090804242969879, guid: a57c97900e23e7d40a64a662e4084174, type: 3}

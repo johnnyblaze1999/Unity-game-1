@@ -17,8 +17,8 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemy()
     {
         // Stop if scored 20 or more point
-        if (CurrentScore.score >= 20){
-            CancelInvoke("SpawnEnemy");
+        if (CurrentScore.score >= 20 && CurrentScore.score <= 40){
+            //CancelInvoke("SpawnEnemy");
             return;
         }
         // Choose a random side (0: right, 1: bottom, 2: left, 3: top)
