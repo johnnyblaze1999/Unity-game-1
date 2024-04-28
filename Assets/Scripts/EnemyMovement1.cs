@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EnemyMovement1 : MonoBehaviour
 {
@@ -62,10 +61,6 @@ public class EnemyMovement1 : MonoBehaviour
         {
             Health playerHealth = collision.GetComponent<Health>();
             playerHealth.TakeDamage(damage);
-
-            if (playerHealth.currentHealth <= 0){
-                SceneManager.LoadScene("gameOver");
-            }
         }
     }
     void OnBecameInvisible()

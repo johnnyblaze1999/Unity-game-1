@@ -37,10 +37,6 @@ public class EnemyMovement : MonoBehaviour
         {
             Health playerHealth = collision.GetComponent<Health>();
             playerHealth.TakeDamage(damage);
-
-            if (playerHealth.currentHealth <= 0){
-                SceneManager.LoadScene("gameOver");
-            }
         }
     }
 }

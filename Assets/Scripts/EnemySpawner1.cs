@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawner1 : MonoBehaviour
 {
     [SerializeField]
     private GameObject frogPrefab;
+    [SerializeField]
+    private GameObject bluPrefab;
     [SerializeField]
     private float minSpawn;
     [SerializeField]
@@ -28,7 +31,11 @@ public class EnemySpawner1 : MonoBehaviour
         timeUntilSpawn -= Time.deltaTime;
 
         if (timeUntilSpawn <= 0){
-            Instantiate(frogPrefab, transform.position, Quaternion.identity);
+            if (CurrentScore.score < 50){
+                Instantiate(frogPrefab, transform.position, Quaternion.identity);
+            } else {
+                Instantiate(bluPrefab, transform.position, Quaternion.identity);
+            }
             SetTimeUntilSpawn();
         }
     }

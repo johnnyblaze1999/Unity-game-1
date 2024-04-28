@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4245160414525853472, guid: ef430667be7e68647ba9a8448183162d, type: 3}
+      propertyPath: bluPrefab
+      value: 
+      objectReference: {fileID: 7049279978374629782, guid: 95549b486baf7844cb3306370747c4f0, type: 3}
     - target: {fileID: 7749081434440301280, guid: ef430667be7e68647ba9a8448183162d, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (2)
@@ -1371,7 +1375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6393251688664818084, guid: a57c97900e23e7d40a64a662e4084174, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7296090804242969879, guid: a57c97900e23e7d40a64a662e4084174, type: 3}
       propertyPath: m_Name
@@ -2031,6 +2035,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4245160414525853472, guid: ef430667be7e68647ba9a8448183162d, type: 3}
+      propertyPath: bluPrefab
+      value: 
+      objectReference: {fileID: 7049279978374629782, guid: 95549b486baf7844cb3306370747c4f0, type: 3}
     - target: {fileID: 7749081434440301280, guid: ef430667be7e68647ba9a8448183162d, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (3)
@@ -2186,7 +2194,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 862abb7db1836434184a4930e2af15d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5314,6 +5322,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4245160414525853472, guid: ef430667be7e68647ba9a8448183162d, type: 3}
+      propertyPath: bluPrefab
+      value: 
+      objectReference: {fileID: 7049279978374629782, guid: 95549b486baf7844cb3306370747c4f0, type: 3}
     - target: {fileID: 7749081434440301280, guid: ef430667be7e68647ba9a8448183162d, type: 3}
       propertyPath: m_Name
       value: EnemySpawner (1)
@@ -5509,6 +5521,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4245160414525853472, guid: ef430667be7e68647ba9a8448183162d, type: 3}
+      propertyPath: bluPrefab
+      value: 
+      objectReference: {fileID: 7049279978374629782, guid: 95549b486baf7844cb3306370747c4f0, type: 3}
     - target: {fileID: 7749081434440301280, guid: ef430667be7e68647ba9a8448183162d, type: 3}
       propertyPath: m_Name
       value: EnemySpawner
