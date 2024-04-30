@@ -716,7 +716,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1375892618}
         m_TargetAssemblyTypeName: RetryGame, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
