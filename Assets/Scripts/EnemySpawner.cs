@@ -61,4 +61,3 @@ public class EnemySpawner : MonoBehaviour
         Destroy(enemy, (2 * mainCamera.orthographicSize * mainCamera.aspect + 2) / enemy.GetComponent<EnemyMovement>().moveSpeed);
     }
 }
-
