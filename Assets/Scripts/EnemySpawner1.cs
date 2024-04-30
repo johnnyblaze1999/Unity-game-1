@@ -33,8 +33,11 @@ public class EnemySpawner1 : MonoBehaviour
         if (timeUntilSpawn <= 0){
             if (CurrentScore.score < 50){
                 Instantiate(frogPrefab, transform.position, Quaternion.identity);
-            } else {
+            } else if (CurrentScore.score >= 50){
                 Instantiate(bluPrefab, transform.position, Quaternion.identity);
+            }
+            if (CurrentScore.score > 90){
+                Instantiate(frogPrefab, transform.position, Quaternion.identity);
             }
             SetTimeUntilSpawn();
         }
