@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 19958
+  controlID: 20906
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,7 +92,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 19959
+  controlID: 20907
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 19960
+  controlID: 20908
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 207.5
     height: 652.5
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -236,9 +236,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 38630000
+      m_SelectedIDs: 32630000
       m_LastClickedID: 0
-      m_ExpandedIDs: 5c3bffff663cffffa83cffffde3cffff143dfffffa3fffffba44ffffa85cffff085dfffff660ffff4e61ffff1c62ffff7c62ffffe263ffffc67cffff267dffff487effff9a7effff987fffffae80ffff1881ffff9e82ffffd683ffff7884ffffe084ffff2488ffffe28effffb892ffff1893ffffeea7ffffb4a8ffff10a9ffff46a9ffff42aaffffdac8fffff6cfffffd2d0ffffa8edffff1cfbffffac610000ce61000058740000e8770000ac78000010790000f48100001a8200001e82000040820000988300000c84000082840000fe84000024850000248700009a870000a28b0000a68b0000c88b0000e28f0000949000005a9300007c93000000940000b2940000be940000549600006a9600006e96000090960000b096000014970000d2970000c8a20000eaa200009ca600005aa700008aab0000acab0000dcac00009aad00008cb0000090b00000b2b00000beb70000d8b70000fab700001ab800002ab90000e8b900006cc400002ac50000
+      m_ExpandedIDs: 4a38ffff8a38ffffd238ffff5c3bffff663cffffa83cffffde3cffff143dfffffa3fffffba44ffffa85cffff085dfffff660ffff4e61ffff1c62ffff7c62ffffe263ffffc67cffff267dffff487effff9a7effff987fffffae80ffff1881ffff9e82ffffd683ffff7884ffffe084ffff2488ffffe28effffb892ffff1893ffffeea7ffffb4a8ffff10a9ffff46a9ffff42aaffffdac8fffff6cfffffd2d0ffffa8edffff1cfbffffac610000ce61000058740000e8770000ac78000010790000f48100001a8200001e82000040820000988300000c84000082840000fe84000024850000248700009a870000a28b0000a68b0000c88b0000e28f0000949000005a9300007c93000000940000b2940000be940000549600006a9600006e96000090960000b096000014970000d2970000c8a20000eaa200009ca600005aa700008aab0000acab0000dcac00009aad00008cb0000090b00000b2b00000beb70000d8b70000fab700001ab800002ab90000e8b900006cc400002ac50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -916,13 +916,13 @@ MonoBehaviour:
     y: 652.5
     width: 1325
     height: 294.5
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
@@ -1039,9 +1039,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 38630000
-    m_LastClickedInstanceID: 25400
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 32630000
+    m_LastClickedInstanceID: 25394
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ec6100000000000046640000707700005eb70000fa6500000e660000be66000068620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1090,7 +1090,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1
+    x: 0
     y: 735.5
     width: 1324
     height: 273.5
