@@ -45,6 +45,13 @@ public class EnemyShooting : MonoBehaviour
     void shoot(){
         Instantiate(bullet, transform.position, Quaternion.identity);
     }
+
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.CompareTag("Player")){
+            Health playerHealth = other.GetComponent<Health>();
+            playerHealth.TakeDamage(1);
+        }
+    }
     void OnBecameInvisible(){
         Destroy(gameObject);
     }

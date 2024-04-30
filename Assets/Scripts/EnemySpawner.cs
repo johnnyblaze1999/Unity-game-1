@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemy()
     {
         // Stop if scored 20 or more point
-        if (CurrentScore.score >= 20 && CurrentScore.score <= 40 || CurrentScore.score > 50){
+        if (CurrentScore.score >= 20 && CurrentScore.score <= 40 || (CurrentScore.score > 50 && CurrentScore.score < 70)){
             //CancelInvoke("SpawnEnemy");
             return;
         }
@@ -25,6 +25,10 @@ public class EnemySpawner : MonoBehaviour
         if (CurrentScore.score > 40 && CurrentScore.score <= 50){
             spawnInterval = 2.5f;
         }
+        if (CurrentScore.score > 70){
+            spawnInterval = 1.5f;
+        }
+
         // Choose a random side (0: right, 1: bottom, 2: left, 3: top)
         int side = Random.Range(0, 4);
 
